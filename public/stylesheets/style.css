@@ -1,8 +1,103 @@
 body {
-  padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  padding: 3em;
+  height: 100vh;
 }
 
 a {
   color: #00B7FF;
+}
+
+.app, main, .sidebar {
+  position: relative;
+  height: 100%;
+}
+
+/* ===== */
+/* FORMS */
+/* ===== */
+
+textarea {
+  display: block;
+  padding: 5px;
+  width: 300px;
+  border: none;
+  border-bottom: 1px solid #757575;
+  max-width: 100%;
+  outline: none;
+  color: #666;
+}
+
+textarea {
+  height: 2em;
+  resize: vertical;
+}
+
+textarea:focus ~ .underline {
+  width: 100%;
+  left: 0;
+}
+
+.underline {
+  display: block;
+  position: relative;
+  margin-bottom: 10px;
+  width: 0;
+  max-width: 100%;
+  height: 2px;
+  margin-top: -2px;
+  background: #3af;
+  transition: 0.3s;
+  left: 50%;
+}
+
+/* ==== */
+/* MAIN */
+/* ==== */
+
+.input-area {
+  position: absolute;
+  bottom: 0;
+}
+
+.input-area textarea {
+  width: 100%;
+}
+
+/* ======= */
+/* SIDEBAR */
+/* ======= */
+
+.channels {
+  padding-left: 0;
+}
+
+.channels li {
+  list-style: none;
+  height: 2.5em;
+  display: flex;
+  align-items: center;
+  padding-left: 1em;
+  user-select: none;
+  border-radius: 0.2em;
+}
+
+.channels li:hover {
+  background: #d8d8d8;
+  cursor: pointer;
+}
+
+.profile {
+  position: absolute; 
+  bottom: 0;
+  user-select: none;
+}
+
+.profile:hover {
+  cursor: pointer;
+}
+
+.profile img {
+  width: 30px;
+  border-radius: 100%;
 }

@@ -1,11 +1,32 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= title %></title>
+    <title>Studium</title>
+    <link rel='stylesheet' href='/stylesheets/bootstrap.min.css' />
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+    <div class="app row">
+      <div class="col-md-2 sidebar">
+        <ul class="channels">
+          <li>AP Chemistry</li>
+          <li>AP Computer Science A</li>
+        </ul>
+        <div class="profile container">
+          <img src="https://js0mmer.github.io/static/media/me.9db82b91.jpg" />
+          <span class="name">Jacob</span>
+        </div>
+      </div>
+      <main class="col-md-10">
+        <div class="chat container">
+        </div>
+        <div class="input-area container">
+          <div>
+            <textarea></textarea>
+            <span class="underline"></span>
+          </div>
+        </div>
+      </main>
+    </div>
   </body>
 </html>
