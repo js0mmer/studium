@@ -88,7 +88,7 @@ textarea:focus ~ .underline {
 }
 
 .profile {
-  position: absolute; 
+  position: absolute;
   bottom: 0;
   user-select: none;
 }
@@ -100,4 +100,56 @@ textarea:focus ~ .underline {
 .profile img {
   width: 30px;
   border-radius: 100%;
+}
+/* ======= */
+/* Login */
+/* ======= */
+.backgroundlogin{
+  background-image: url("https://thewallpaper.co//wp-content/uploads/2016/10/free-images-book-wallpapers-hd-full-hd-download-high-definiton-wallpapers-desktop-images-windows-10-backgrounds-colourful-hi-res-cool-artwork-2560x1600.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.center{
+  text-align: center;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+.frontheaders{
+  margin-bottom: 30px;
+  margin: 0;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  color: White;
+  text-shadow: white 0px 0px 3px;
+  font-size: 50px;
+}
+.login{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.button{
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
 }
